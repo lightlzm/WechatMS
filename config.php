@@ -8,7 +8,7 @@
     
 	 
     
-	define("API_URL","http://localhost/WechatMS/api.php");//数据接口路径，请修改 localhost值
+	define("API_URL","http://localhost/WechatMS/api.php");//数据接口路径，请修改 localhost 为你服务器路径的值
 	define("_URL_","");//静态文件路径（不需修改）  
     	
 ?>
