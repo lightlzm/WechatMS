@@ -1,13 +1,13 @@
 <?
 /*
  * @Author: lightlizm
- * @Date: 2020-04-16 11:31:15
+ * @Date: 2020-05-15 15:24:15
  * @LastEditors: lightlizm
- * @LastEditTime: 2020-05-07 21:01:15
- * @Description: 接口
+ * @LastEditTime: 2020-05-19
+ * @Description: 数据接口
  */
 /*
-    API List:
+    数据接口列表:
 	query_job  查询任务状态
 	markup_job 标记任务已执行
 	get_job    获取任务（执行）
@@ -27,10 +27,12 @@
 	update_chatroom        更新单个群聊资料
 	edit_join_welcome_msg  编辑入群欢迎语
 	get_join_welcome_msg   获取入群欢迎语
-	add_auto_reply         添加自动回复
+	add_auto_reply         添加自动回复 （文字、图文、图片、加群）
 	
+	get_wx_auto_reply      获取个人号关键字自动回复数据结构
+	remove_auto_reply      删除自动回复
 	get_job_timing         获取定时任务
-	
+	bot_init               初始化机器人
 			   
 */
 include("config.php");

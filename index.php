@@ -1,10 +1,10 @@
 <?
 /*
  * @Author: lightlizm
- * @Date: 2020-04-29 15:24:15
+ * @Date: 2020-05-15 15:24:15
  * @LastEditors: lightlizm
  * @LastEditTime: 2020-05-19
- * @Description: 后台管理
+ * @Description: 主程序入口
  */
 
 include("config.php");
@@ -239,7 +239,9 @@ switch($action){
    default:
          $b=botlist(); 
 		 $url=str_replace('index.php',"lib/phpqrcodeV2.php","http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-		 $url=$url."&url=";
+		 if(empty($action)){
+		    $url=$url."?url=";
+		 }else $url=$url."&url=";
 		 if( $b['total'] ==0){
 		     include("html/nobot.php"); 
 			 exit();

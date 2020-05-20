@@ -1,4 +1,7 @@
 <?
+/*
+    基础函数
+*/ 
 include("lib/limitpage.php"); 
 
 function getAlldata($sql)
